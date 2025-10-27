@@ -18,6 +18,9 @@
 
 ## 🖼️ Превью
 
+<img width="823" height="634" alt="image" src="https://github.com/user-attachments/assets/49738c67-8e31-463f-99ae-297309e4f454" />
+
+
 
 ## 🧩 Структура проекта
 
