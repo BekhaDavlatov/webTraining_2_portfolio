@@ -1,0 +1,349 @@
+/* Reset & base */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: #0b0b0c;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Utilities */
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 0;
+}
+
+.logo {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    color: #e8faff;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+/* Nav */
+.nav-list {
+    display: flex;
+    gap: 36px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-link {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: #00a4e5;
+    transition: width .28s ease;
+    transform-origin: left;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.menu-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    color: #ddd;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+/* Hero */
+.hero {
+    padding: 56px 0;
+}
+
+.hero-inner {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 40px;
+    align-items: start;
+}
+
+.hero-title {
+    font-size: 40px;
+    line-height: 1.06;
+    margin: 0 0 16px 0;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.hero-lead {
+    color: #d7dfe6;
+    margin: 0 0 22px 0;
+    max-width: 720px;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn.primary {
+    background: #00a4e5;
+    color: #03202b;
+}
+
+.btn.ghost {
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    color: #fff;
+    background: transparent;
+}
+
+/* Hero card */
+.hero-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 22px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat {
+    font-weight: 700;
+    font-size: 18px;
+    color: #00a4e5;
+}
+
+.stat span {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    color: #cdeefb;
+    margin-top: 6px;
+}
+
+/* Info: title with right line */
+.info-row {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    margin: 44px 0;
+}
+
+.info-title {
+    margin: 0;
+    font-size: 42px;
+    line-height: 1.16;
+    font-weight: 600;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.info-title .info-line {
+    display: block;
+    margin-left: 124px;
+    /* расстояние между h3 и линией */
+    height: 1px;
+    background: #fff;
+    width: calc(100% - (
+                /* placeholder: we'll override via wrapper */
+                0px));
+    /* we'll use a flex child approach: see .info-row flex below */
+}
+
+/* Use a pseudo-flex filler instead — simpler */
+.info-title::after {
+    content: "";
+    display: block;
+    margin-left: 124px;
+    flex: 1;
+    height: 1px;
+    background: #fff;
+}
+
+/* Ensure the heading acts as flex item that can expand: */
+.info-row>.info-title {
+    flex: 0 1 620px;
+}
+
+.info-text {
+    max-width: 443px;
+}
+
+/* info text */
+.info-p {
+    margin: 0 0 12px 0;
+    color: #d6dee6;
+    font-weight: 500;
+    line-height: 1.4;
+    font-size: 20px;
+}
+
+.accent {
+    color: #00a4e5;
+    font-weight: 700;
+}
+
+/* Services */
+.section-title {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 12px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* clients */
+.clients-title {
+    margin: 28px 0 16px 0;
+    color: #dfeff6;
+    font-weight: 700;
+}
+
+.clients-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.client-row {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border: 1px dashed rgba(0, 164, 229, 0.32);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.client-name {
+    font-weight: 600;
+}
+
+.client-services {
+    color: #c7d6df;
+    font-size: 13px;
+    flex: 1;
+}
+
+.client-btn {
+    border: 0;
+    background: #00a4e5;
+    color: #012;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+/* clients footer */
+.clients-footer {
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn.circle {
+    width: 54px;
+    height: 36px;
+    border-radius: 20px;
+    background: transparent;
+    border: 1px dashed rgba(0, 164, 229, 0.3);
+    color: #fff;
+    font-size: 20px;
+}
+
+/* contact & footer */
+.contact {
+    padding: 36px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    margin-top: 34px;
+}
+
+.site-footer {
+    padding: 24px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    margin-top: 34px;
+    text-align: center;
+    color: #87929a;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .info-row {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .info-title {
+        margin-bottom: 0;
+    }
+
+    .info-title::after {
+        display: none;
+    }
+
+    /* hide long line on small screens (optional) */
+    .nav-list {
+        display: none;
+    }
+
+    .menu-btn {
+        display: inline-block;
+    }
+}

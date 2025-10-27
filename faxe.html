@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="facc.css">
+    <title>Caroselling — Digital studio</title>
+
+    <!-- Google font (пример) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Playfair+Display:wght@600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">Caroselling</div>
+
+            <nav class="main-nav" aria-label="Главное меню">
+                <ul class="nav-list">
+                    <li><a href="#services" class="nav-link">brand design</a></li>
+                    <li><a href="#web" class="nav-link">web design</a></li>
+                    <li><a href="#copy" class="nav-link">copywriting</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-btn" id="menuToggle" aria-expanded="false" aria-label="Open menu">menu</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-left">
+                    <h1 class="hero-title">Caroselling digital studio for experiences</h1>
+                    <p class="hero-lead">Usiamo il design per mettere al centro le persone e le loro scelte. Realizziamo
+                        siti web, brand identity e contenuti creativi che prendono per mano i tuoi clienti e li portano
+                        verso di te.</p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn primary">Contattaci</a>
+                        <a href="#services" class="btn ghost">I servizi</a>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <!-- декоративный блок / место для картинки -->
+                    <div class="hero-card">
+                        <div class="stat">5<span>messaggi</span></div>
+                        <p class="small">Capsula del tempo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info block with long header and right line -->
+        <section class="info container">
+            <div class="info-row">
+                <h2 class="info-title">
+                    le grandi cose, come le piccole,<br />
+                    tutto ci appassiona.
+                    <span class="info-line" aria-hidden="true"></span>
+                </h2>
+
+                <div class="info-text">
+                    <p class="info-p"><strong>ogni giorno nutriamo l’ambizione di</strong> <span
+                            class="accent">semplificare la complessità.</span></p>
+                    <p class="info-p">non amiamo i compromessi, le risposte standard per qualsiasi problema, ma solo la
+                        soluzione studiata e giusta per te.</p>
+                    <p class="info-p">crediamo nelle idee che sappiano abbracciare una visione strategica.</p>
+                    <p class="info-p">ti diremo che faremo delle cose, e poi le faremo <span
+                            class="accent">davvero.</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="services container">
+            <h3 class="section-title">servizi</h3>
+
+            <div class="services-grid">
+                <article class="card">
+                    <h4>brand design</h4>
+                    <ul>
+                        <li>brand strategy</li>
+                        <li>logo design</li>
+                        <li>visual identity</li>
+                    </ul>
+                </article>
+
+                <article class="card" id="web">
+                    <h4>web design</h4>
+                    <ul>
+                        <li>UX / UI</li>
+                        <li>development</li>
+                        <li>ecommerce</li>
+                    </ul>
+                </article>
+
+                <article class="card" id="copy">
+                    <h4>copywriting</h4>
+                    <ul>
+                        <li>landing pages</li>
+                        <li>SEO copy</li>
+                        <li>microcopy</li>
+                    </ul>
+                </article>
+            </div>
+
+            <blockquote class="quote">Qualunque tecnologia sufficientemente avanzata è indistinguibile dalla magia. —
+                Arthur C. Clarke</blockquote>
+        </section>
+
+        <!-- Clients list -->
+        <section class="clients container">
+            <h4 class="clients-title">clienti</h4>
+
+            <div class="clients-list">
+                <div class="client-row">
+                    <div class="client-name">APT Dolomiti Paganella</div>
+                    <div class="client-services">copywriting</div>
+                    <button class="client-btn">+</button>
+                </div>
+
+                <div class="client-row">
+                    <div class="client-name">Gardalisa</div>
+                    <div class="client-services">brand, copywriting, seo, social</div>
+                    <button class="client-btn">+</button>
+                </div>
+
+                <div class="client-row">
+                    <div class="client-name">Mobiliar interiorarchitecture</div>
+                    <div class="client-services">web design, copywriting</div>
+                    <button class="client-btn">+</button>
+                </div>
+
+                <div class="client-row">
+                    <div class="client-name">Cascina Casalina</div>
+                    <div class="client-services">brand, copywriting</div>
+                    <button class="client-btn">+</button>
+                </div>
+            </div>
+
+            <div class="clients-footer">
+                <button class="btn circle">+</button>
+            </div>
+        </section>
+
+        <!-- Contact / footer CTA -->
+        <section id="contact" class="contact container">
+            <h5>Vuoi lavorare con noi?</h5>
+            <p>Manda una mail a <a href="mailto:hello@caroselling.it">hello@caroselling.it</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; Caroselling — demo layout</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
