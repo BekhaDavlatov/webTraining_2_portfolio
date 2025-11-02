@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url(../dark/font/webfontkit-20251027-155754/manrope-variablefont_wght-webfont.woff) format('woff');
+    src: url(../dark/font/webfontkit-20251027-155754/manrope-variablefont_wght-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'Manrope';
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+
+
+/* ==== header */
+.container_header {
+    margin: 0 auto;
+    max-width: 1440px;
+    max-height: 64px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    max-width: 14px;
+    max-height: 14px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo_icon {
+    width: 120px;
+    height: 28.33px;
+}
